@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <Button
+        android:id="@+id/wheel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="29dp"
+        android:text="Enter" />
+
+    <EditText
+        android:id="@+id/edit_dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dop"
+        android:layout_alignBottom="@+id/dop"
+        android:layout_toRightOf="@+id/dop"
+        android:ems="10"
+        android:inputType="date"
+        android:maxLength="6" />
+
+    <TextView
+        android:id="@+id/top_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_dd"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/edit_dd"
+        android:text="Top speed: " />
+
+    <EditText
+        android:id="@+id/edit_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/top_speed"
+        android:layout_alignBottom="@+id/top_speed"
+        android:layout_alignLeft="@+id/edit_dd"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2">
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wheel_button"
+        android:layout_alignRight="@+id/dop"
+        android:text="Wheel Size(cm): " />
+
+    <TextView
+        android:id="@+id/dop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wheel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="46dp"
+        android:text="Date of Purchase(dd/mm/yy): " />
+
+    <EditText
+        android:id="@+id/edit_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/wheel"
+        android:layout_toRightOf="@+id/wheel"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"></EditText>
+
+</RelativeLayout>

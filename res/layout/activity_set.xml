@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="bottom"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="General"
+        android:textColor="#acfafd"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/general"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/Unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Unit:"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/unit_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/km" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="7dp" >
+
+        <TextView
+            android:id="@+id/Mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Mode:"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/mode_button"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/eco" />
+    </LinearLayout>
+    
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout2"
+         android:layout_below="@+id/linearLayout2"
+         android:layout_marginTop="7dp" >
+         
+          <TextView
+            android:id="@+id/cruisetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Cruise:"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/cruisesele"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/on" />
+         
+         
+     </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:id="@+id/wheelsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheel Size:"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wheelset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+        
+            android:textColor="#ffffff"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CM"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/line2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battery_tit"
+        android:layout_below="@+id/battery_tit" >
+
+        <TextView
+            android:id="@+id/auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Auto Selection:"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/selection"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/on" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/battery_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Battery"
+        android:textColor="#acfafd"
+        android:textSize="20sp" />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/linearLayout3"
+         android:layout_alignRight="@+id/linearLayout6"
+         android:layout_marginRight="40dp"
+         android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/up"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/up" />
+
+         <Button
+             android:id="@+id/down"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/down" />
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/update"
+         android:layout_width="320dp"
+         android:layout_height="35dp"
+         android:layout_above="@+id/logout"
+         android:layout_alignLeft="@+id/Firmware"
+         android:layout_marginBottom="8dp"
+         android:background="@drawable/update" />
+
+     <Button
+         android:id="@+id/logout"
+         android:layout_width="320dp"
+         android:layout_height="35dp"
+         android:layout_alignLeft="@+id/update"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="15dp"
+         android:background="@drawable/logout" />
+
+     <TextView
+         android:id="@+id/Firmware"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/update"
+         android:layout_alignLeft="@+id/Firmware_tit"
+         android:text="Firmware Version: 1.0"
+         android:textColor="#ffffff"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/Firmware_tit"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/Firmware"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="20dp"
+         android:text="System"
+         android:textColor="#acfafd"
+         android:textSize="20sp" />
+
+     <LinearLayout
+         android:id="@+id/linearLayout6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout5"
+         android:layout_below="@+id/linearLayout5"
+         android:layout_marginTop="7dp" >
+
+         <TextView
+             android:id="@+id/charg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Charging Order:"
+             android:textColor="#ffffff"
+             android:textSize="20sp" />
+
+         <Button
+             android:id="@+id/charge"
+             android:layout_width="120dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="13dp"
+             android:background="@drawable/high" />
+     </LinearLayout>
+
+     <ImageView
+         android:id="@+id/ImageView01"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/Firmware_tit"
+         android:layout_alignParentLeft="true"
+         android:src="@drawable/line2" />
+
+     <LinearLayout
+         android:id="@+id/linearLayout5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout4"
+         android:layout_below="@+id/linearLayout4"
+         android:layout_marginTop="7dp" >
+
+         <TextView
+             android:id="@+id/auto2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:text="Auto Switch:"
+             android:textColor="#ffffff"
+             android:textSize="20sp" />
+
+         <Button
+             android:id="@+id/switch_button"
+             android:layout_width="120dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="44dp"
+             android:background="@drawable/on" />
+     </LinearLayout>
+
+</RelativeLayout>

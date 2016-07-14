@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+
+
+
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.bike"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+
+
+
+
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyAPP"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme"
+      
+
+       >
+        <activity
+            android:name="com.example.android.bike.Data"
+            android:enabled="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.BluetoothChat"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               >
+
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+               
+        </activity>
+        <activity
+            android:name="com.example.android.bike.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity
+            android:name="com.example.android.bike.Setting_enter"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value = "AIzaSyByurRnwUuDvc0qQik1PmVzfSjjFcfOo_o"/>
+           <!-- android:value="AIzaSyDsiHSNPGvCR7yPojg-K2mP_55sDDPpKe4" -->
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.android.bike.MMap"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.Battery"
+            android:label="@string/title_activity_battery"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.Set"
+            android:label="@string/title_activity_set"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.Information"
+            android:label="@string/title_activity_information"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.Error"
+            android:label="@string/title_activity_error"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name="com.example.android.bike.OPTIMUS"
+            android:label="@string/title_activity_opening"
+            android:screenOrientation="portrait" >
+            
+              
+        </activity>
+    </application>
+
+</manifest>

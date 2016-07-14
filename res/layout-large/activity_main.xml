@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+<ImageView
+    android:id="@+id/starticon"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/optimus" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/starticon"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/suemail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="or" 
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/gmsign"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gmail" />
+
+     <Button
+         android:id="@+id/fbsign"
+         android:layout_width="250dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/fb" />
+
+     <Button
+         android:id="@+id/signin"
+         android:layout_width="250dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/semail" />
+      
+</LinearLayout>
+
+</RelativeLayout>

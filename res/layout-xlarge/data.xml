@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="54dp"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/kmh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Distance_label"
+        android:layout_marginBottom="14dp"
+        android:text="Kilometers" />
+
+    <Button
+        android:id="@+id/mph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kmh"
+        android:layout_alignBottom="@+id/kmh"
+        android:layout_toLeftOf="@+id/total_Distance"
+        android:text="Miles" />
+
+    <TextView
+        android:id="@+id/topspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clean"
+        android:layout_centerHorizontal="true"
+        android:text="00 km/HR" />
+
+    <TextView
+        android:id="@+id/wheelsize_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/topspeed_label"
+        android:layout_alignLeft="@+id/topspeed_label"
+        android:layout_marginBottom="14dp"
+        android:text="Wheel size: " />
+
+    <TextView
+        android:id="@+id/topspeed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/topspeed"
+        android:layout_alignBottom="@+id/topspeed"
+        android:layout_alignRight="@+id/Distance_label"
+        android:text="Top speed: " />
+
+    <TextView
+        android:id="@+id/wheelsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wheelsize_label"
+        android:layout_alignBottom="@+id/wheelsize_label"
+        android:layout_alignLeft="@+id/topspeed"
+        android:text="00 cm" />
+
+    <TextView
+        android:id="@+id/total_Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clean"
+        android:layout_alignBottom="@+id/clean"
+        android:layout_alignLeft="@+id/topspeed"
+        android:text="000" />
+    "
+
+    <TextView
+        android:id="@+id/Distance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_Distance"
+        android:layout_alignBottom="@+id/total_Distance"
+        android:layout_marginRight="34dp"
+        android:layout_toLeftOf="@+id/mph"
+        android:text="Distance: " />
+
+    <TextView
+        android:id="@+id/total_Distance_kmORmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_Distance"
+        android:layout_alignBottom="@+id/total_Distance"
+        android:layout_toRightOf="@+id/wheelsize" />
+
+    <TextView
+        android:id="@+id/reset_distance_kmmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_Distance_kmORmi"
+        android:layout_alignBottom="@+id/total_Distance_kmORmi"
+        android:layout_toRightOf="@+id/wheelsize"
+        android:text="km" />
+    "
+
+</RelativeLayout>

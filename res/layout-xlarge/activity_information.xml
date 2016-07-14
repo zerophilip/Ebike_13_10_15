@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/curr_titt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Trip Summary"
+            android:textColor="#acfafd"
+            android:textSize="30sp" />
+        
+        <TextView
+            android:id="@+id/currspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Curr Speed:"
+            android:textColor="#50FFFFFF"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView 
+                android:id="@+id/currspeedvalue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00"
+                android:textSize="60sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/kmmih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="km/h"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+          <TextView
+            android:id="@+id/avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Avg speed:"
+            android:textColor="#50FFFFFF"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+              <TextView 
+                android:id="@+id/avgspeeed"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00"
+                android:textSize="60sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/kmmih2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="km/h"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+          <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Max speed:"
+            android:textColor="#50FFFFFF"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+             <TextView 
+                android:id="@+id/maxspeed"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00"
+                android:textSize="60sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/kmmih3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km/h"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+          <TextView
+            android:id="@+id/trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Trip Distance:"
+            android:textColor="#50FFFFFF"
+            android:textSize="30sp" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+             <TextView 
+                android:id="@+id/tripdistance"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00.0"
+                android:textSize="60sp"
+                android:textColor="#FFFFFF"/>
+            
+               <TextView
+                android:id="@+id/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+              
+              
+              
+          </LinearLayout>
+          
+         <TextView
+            android:id="@+id/tripdur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Trip Duration:"
+            android:textColor="#50FFFFFF"
+            android:textSize="30sp" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+               <TextView 
+                android:id="@+id/hrvalue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textSize="60sp"
+                android:textColor="#FFFFFF"/> 
+             
+             
+              <TextView
+                android:id="@+id/hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+               <TextView 
+                android:id="@+id/minvalue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00"
+                android:textSize="60sp"
+                android:textColor="#FFFFFF"/> 
+               <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mins"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />  
+          
+         </LinearLayout>
+         
+         <Button
+             android:id="@+id/resetbutton"
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/reset" />
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="10dp"
+             android:scaleType="fitXY"
+             android:src="@drawable/line2" />
+         
+         
+        <TextView
+            android:id="@+id/alltriptit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Trip Summary"
+            android:textColor="#acfafd"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/totalmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Total Mileage:"
+            android:textColor="#50FFFFFF"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/totaldistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.0"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+            <TextView
+                android:id="@+id/km2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+   
+</RelativeLayout>
